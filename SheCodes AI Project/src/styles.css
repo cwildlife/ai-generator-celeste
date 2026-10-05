@@ -21,11 +21,11 @@ h1{
     line-height: 1.5;
     color: #000000;
     text-align: center;
-
+    border-bottom: 1px dashed pink;
 }
 
-
 form{
+    font-family: "Special Elite", system-ui;
     background-color: white;
     border-radius: 20px;
     margin: 20px auto;
@@ -33,8 +33,7 @@ form{
     display: flex;
     justify-content: center;
     text-align: center;
-    gap: 5px;
-    
+    gap: 5px;    
 }
 
 #input{
@@ -42,22 +41,29 @@ form{
     font-size: 12px;
     line-height: 1.5;
     border-radius: 5px;
-    border: 1px solid black;
+    border: none;
+    background-color: rgb(251, 240, 242);
     padding: 10px;
     width: 80%;
-    
 }
  
 .generate-button{
     border-radius: 5px;
-    border: 1px solid black;
-    padding: 10px 5px;
+    padding: 10px 15px;
+    font-weight: 600;
+    margin-left: 5px;
+    background-color: rgb(251, 240, 242);
+    border: none;
     
 }
 
 .quote-container{
     background-color: white;
     border-radius: 20px;
+    border-left: 3px solid pink;
+    border-right: 3px solid pink;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Special Elite", system-ui;
     margin: 20px auto;
     padding: 20px;
 }
@@ -66,5 +72,8 @@ footer{
     font-family: "Special Elite", system-ui;
     font-weight: 300;
     font-style: normal;
-    font-size: 12px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px dashed pink;
 }
