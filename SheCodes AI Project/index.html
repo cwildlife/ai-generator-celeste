@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Special+Elite&display=swap"
         rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title> AI Quote Generator </title>
 </head>
@@ -20,7 +21,7 @@
         </header>
 
         <main>
-            <form>
+            <form id="quoteGenerator">
                 <input type="text" id="input" placeholder="Enter a topic..." autocomplete="off" autofocus required />
                 <input type="submit" class="generate-button" value="Generate Quote" />
             </form>
@@ -29,7 +30,8 @@
         <div class="quote-container">
             Loading an inspirational quote...
             <br />
-            Inspirational quote will be displayed here.
+            <div id="quoteOutput">
+            </div>
         </div>
 
         <footer>
