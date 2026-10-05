@@ -4,41 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Special+Elite&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="src/styles.css" />
     <title> AI Quote Generator </title>
 </head>
 
 <body>
-    <header>
-        <h1> Quote Generator</h1>
-    </header>
+    <div class="container">
 
-    <main>
-        <form>
-            <input type="text" id="userInput" placeholder="Enter a topic..." autocomplete="off" autofocus required />
-            <input type="submit" value="Generate Quote" />
-        </form>
+        <header>
+            <h1> Quote Generator</h1>
+        </header>
 
-    </main>
-    <p>
-        Loading an inspirational quote from the AI model may take a few seconds.
-        <br />
-        Please be patient...
-    </p>
-    <div>
-        Inspirational quote will be displayed here.
+        <main>
+            <form>
+                <input type="text" id="input" placeholder="Enter a topic..." autocomplete="off" autofocus required />
+                <input type="submit" class="generate-button" value="Generate Quote" />
+            </form>
+
+        </main>
+        <div class="quote-container">
+            Loading an inspirational quote...
+            <br />
+            Inspirational quote will be displayed here.
+        </div>
+
+        <footer>
+            <p>
+                This AI project was coded by
+                <a href="https://github.com/cwildlife" target="_blank">Celeste Rust</a> and the code is available
+                <a href="https://github.com/cwildlife/ai-generator-celeste" target="_blank"> on GitHub</a> and it is
+                <a href="https://celeste-ai-generator-project.vercel.app/" target="_blank">hosted on Vercel</a>
+            </p>
+        </footer>
+
+        <script src="src/script.js"></script>
     </div>
-
-    <footer>
-        <p>
-            This AI project was coded by
-            <a href="https://github.com/cwildlife" target="_blank">Celeste Rust</a> and the code is available
-            <a href="https://github.com/cwildlife/ai-generator-celeste" target="_blank"> on GitHub</a> and it is
-            <a href="https://celeste-ai-generator-project.vercel.app/" target="_blank">hosted on Vercel</a>
-        </p>
-    </footer>
-
-    <script src="src/script.js"></script>
 </body>
 
 </html>
