@@ -26,7 +26,7 @@ h1{
 
 form{
     font-family: "Special Elite", system-ui;
-    background-color: white;
+    background-color: rgb(251, 240, 242);
     border-radius: 20px;
     margin: 20px auto;
     padding: 20px;
@@ -40,9 +40,9 @@ form{
     font-style:italic;
     font-size: 12px;
     line-height: 1.5;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(251, 240, 242);
+    border-radius: 10px;
+    border: 1px solid pink;
+    background-color: white;
     padding: 10px;
     width: 80%;
 }
@@ -56,12 +56,12 @@ form{
 }
  
 .generate-button{
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 15px;
     font-weight: 600;
     margin-left: 5px;
-    background-color: rgb(251, 240, 242);
-    border: none;
+    background-color: white;
+    border: 1px solid pink;
     
 }
 
