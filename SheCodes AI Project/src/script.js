@@ -19,7 +19,11 @@ function generateQuote(event) {
     let prompt = `Users instructions:Generate a motivational quote about ${inputElement.value}, It must be only one sentence and must be in quotation marks.Please place the author's name at the end of the quote. Always place the author's name after the quote and add a - before the name. Also use a <strong> element to highlight the - and the author.`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-axios.get(apiUrl).then(displayQuote);
+   let quoteContainer = document.querySelector(".hidden");
+   quoteContainer.classList.remove("hidden");
+   quoteContainer.innerHTML = `<div class="blink"> Generating an inspirational quote for you... </div>`;
+    
+   axios.get(apiUrl).then(displayQuote);
 
 }
 
