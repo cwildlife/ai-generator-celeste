@@ -10,6 +10,7 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
+
     <title> AI Quote Generator </title>
 </head>
 
@@ -17,24 +18,28 @@
     <div class="container">
 
         <header>
-            <h1> Quote Generator</h1>
+            <h1> Quote Generator </h1>
         </header>
 
         <main>
             <div class="form-container">
 
                 <form id="quoteGenerator" class="quote-form">
+
                     <input type="text" id="input" placeholder="Please enter a topic for a quote..." autocomplete="off"
                         autofocus required />
                     <input type="submit" class="generate-button" value="Generate Quote" />
 
-
                 </form>
-                <div class="example-text"> Example: love, happiness, death or peace </div>
+
+                <div class="example-text"> Example: love, happiness, peace </div>
             </div>
+
             <div class="hidden" id="quoteOutput">
             </div>
+
         </main>
+
         <footer>
             <p>
                 This AI project was coded by
