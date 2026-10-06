@@ -76,6 +76,14 @@ form{
     padding: 20px;
 }
 
+strong{
+ font-family: "Special Elite", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.5;
+    color: pink;
+}
 a{
     font-family: "Special Elite", system-ui;
     font-weight: 300;
