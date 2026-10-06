@@ -119,7 +119,7 @@ form{
 }
 
 .blink{
-    animation: blink 500ms step-start 0s infinite;
+    animation: blink 800ms step-start 0s infinite;
 }
 
 strong{
