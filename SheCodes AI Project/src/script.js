@@ -20,7 +20,7 @@ function generateQuote(event) {
 
     let quoteContainer = document.querySelector(".hidden");
     quoteContainer.classList.remove("hidden");
-    quoteContainer.innerHTML =`<div class="blink"> Generating an inspirational quote for you... </div>`;
+    quoteContainer.innerHTML = `<div class="blink"> Generating an inspirational quote for you... </div>`;
     
    axios.get(apiUrl).then(displayQuote);
 
