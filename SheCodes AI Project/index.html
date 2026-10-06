@@ -23,20 +23,20 @@
         </header>
 
         <main>
-            <form id="quoteGenerator">
-                <input type="text" id="input" placeholder="Enter a topic..." autocomplete="off" autofocus required />
-                <input type="submit" class="generate-button" value="Generate Quote" />
-            </form>
+            <div class="form-container">
 
-        </main>
-        <div class="quote-container">
+                <form id="quoteGenerator" class="quote-form">
+                    <input type="text" id="input" placeholder="Please enter a topic..." autocomplete="off" autofocus
+                        required />
+                    <input type="submit" class="generate-button" value="Generate Quote" />
 
-            <br />
-            <br />
-            <div id="quoteOutput">
+
+                </form>
+                <div class="example-text"> Example: life, death, happiness or peace </div>
             </div>
-        </div>
-
+            <div class="hidden" id="quoteOutput">
+            </div>
+        </main>
         <footer>
             <p>
                 This AI project was coded by
